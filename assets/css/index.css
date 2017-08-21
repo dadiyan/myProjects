@@ -202,7 +202,7 @@ header {
         vertical-align: middle;
         background: #e3101e;
         outline: none;
-        border: 0;
+        border-right: 1px solid;
         color: #ffffff;
         font-size: 16px; }
     .serach .s-middle .s-middle-2 {
@@ -282,52 +282,86 @@ header {
 .main-nav {
   width: 100%;
   height: 40px;
-  overflow: hidden;
   position: relative; }
   .main-nav .main-nav1 {
     width: 1200px;
     height: 100%;
     margin: 0 auto; }
-    .main-nav .main-nav1 .h4-1 {
-      display: inline-block;
+    .main-nav .main-nav1 .main-nav2 {
       width: 200px;
-      height: 40px;
-      background-color: #db1927;
-      font-weight: 200;
-      color: #ffffff;
-      line-height: 40px;
-      text-indent: 1em; }
-    .main-nav .main-nav1 ul {
-      position: relative;
-      top: -2px;
-      display: inline-block;
+      height: 490px;
+      float: left; }
+      .main-nav .main-nav1 .main-nav2 .h4-1 {
+        width: 200px;
+        height: 40px;
+        background-color: #db1927;
+        font-weight: 200;
+        color: #ffffff;
+        line-height: 40px;
+        text-indent: 1em; }
+      .main-nav .main-nav1 .main-nav2 .main-nav-over {
+        width: 200px;
+        height: 450px;
+        background: #464344;
+        position: relative;
+        z-index: 50; }
+        .main-nav .main-nav1 .main-nav2 .main-nav-over ul.nav-ul1 {
+          width: 200px;
+          height: 450px;
+          text-indent: 1em;
+          overflow: hidden;
+          border-bottom: 1px solid; }
+          .main-nav .main-nav1 .main-nav2 .main-nav-over ul.nav-ul1 li {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden; }
+            .main-nav .main-nav1 .main-nav2 .main-nav-over ul.nav-ul1 li a {
+              font-size: 15px;
+              color: #ffffff;
+              margin-right: 5px; }
+          .main-nav .main-nav1 .main-nav2 .main-nav-over ul.nav-ul1 li:hover {
+            background: #ffffff;
+            border-left: 1px solid; }
+            .main-nav .main-nav1 .main-nav2 .main-nav-over ul.nav-ul1 li:hover a {
+              color: #909090; }
+            .main-nav .main-nav1 .main-nav2 .main-nav-over ul.nav-ul1 li:hover a:hover {
+              color: #e34a55; }
+    .main-nav .main-nav1 ul.nav-ul2 {
+      float: left;
       width: 800px;
       height: 40px;
-      vertical-align: middle;
       line-height: 40px; }
-      .main-nav .main-nav1 ul li {
+      .main-nav .main-nav1 ul.nav-ul2 li {
         display: inline-block;
         padding: 0 13px; }
-        .main-nav .main-nav1 ul li a {
+        .main-nav .main-nav1 ul.nav-ul2 li a {
           color: #000000; }
     .main-nav .main-nav1 .main-nav-right {
-      position: relative;
-      top: -2px;
       width: 190px;
       height: 40px;
       background: red;
-      display: inline-block;
-      vertical-align: middle; }
+      float: right; }
 
 .carous {
   width: 100%;
   height: 450px;
-  background-color: red;
   position: relative; }
-  .carous .carous-main {
-    width: 1200px;
+  .carous ul {
+    width: 100%;
     height: 450px;
-    margin: 0 auto; }
+    overflow: hidden; }
+    .carous ul li {
+      width: 100%;
+      height: 450px;
+      position: absolute;
+      z-index: 25; }
+  .carous ol {
+    width: 750px;
+    height: 15px; }
+    .carous ol li {
+      width: 30px;
+      height: 13px; }
 
 .avtive-main {
   width: 100%;
@@ -349,11 +383,15 @@ header {
         background: #f64950;
         line-height: 40px; }
         .avtive-main .active-main1 .active-main1-left .active-main1-left-top h3 {
+          width: 200px;
+          height: 40px;
           float: left;
           color: #ffffff;
-          font-weight: 200;
-          vertical-align: top; }
+          font-weight: 200; }
+          .avtive-main .active-main1 .active-main1-left .active-main1-left-top h3 span {
+            float: left; }
           .avtive-main .active-main1 .active-main1-left .active-main1-left-top h3 img {
+            float: left;
             width: 40px;
             height: 40px; }
       .avtive-main .active-main1 .active-main1-left .time-box {
@@ -556,7 +594,7 @@ header {
 
 .like {
   width: 100%;
-  height: 324px;
+  height: 325px;
   overflow: hidden;
   position: relative;
   top: 2px; }
@@ -590,24 +628,229 @@ header {
         background: url("../images/ui (1).png") 115px 51px; }
     .like .like-main ul {
       width: 1200px;
-      height: 264px;
+      height: 263px;
       border: 1px solid #eeeeee; }
       .like .like-main ul li {
         width: 200px;
-        height: 225px;
+        height: 223px;
         margin-top: 20px;
         float: left; }
         .like .like-main ul li a {
           display: block;
           width: 199px;
-          height: 225px;
+          height: 224px;
           border-left: 1px dashed #eeeeee; }
           .like .like-main ul li a img {
             display: block;
             margin-left: 40px;
             width: 120px;
-            height: 120px; }
+            height: 119px; }
+          .like .like-main ul li a p:nth-child(2) {
+            width: 167px;
+            height: 36px;
+            font-size: 12px;
+            margin: 32px 0 0 20px;
+            color: #5e5e5e; }
+          .like .like-main ul li a p:nth-child(2):hover {
+            color: #e3101e; }
+          .like .like-main ul li a p:nth-child(3) {
+            color: #e3101e;
+            line-height: 16px;
+            height: 16px;
+            margin: 8px 0 0 20px;
+            font-size: 16px; }
         .like .like-main ul li .a {
           border: 0; }
 
-/*# sourceMappingURL=index.css.map */
+.hot {
+  width: 100%;
+  height: 428px;
+  top: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #f0f0f0; }
+  .hot .hot-main {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .hot .hot-main .hot-main1 {
+      width: 957px;
+      height: 100%;
+      float: left; }
+      .hot .hot-main .hot-main1 .hot-main1-top {
+        width: 100%;
+        height: 60px;
+        line-height: 60px; }
+        .hot .hot-main .hot-main1 .hot-main1-top h3 {
+          float: left; }
+        .hot .hot-main .hot-main1 .hot-main1-top p {
+          float: right;
+          margin-right: 13px; }
+      .hot .hot-main .hot-main1 .hot-main1-bottom {
+        width: 100%;
+        height: 370px; }
+        .hot .hot-main .hot-main1 .hot-main1-bottom ul {
+          height: 340px;
+          margin-bottom: 30px; }
+          .hot .hot-main .hot-main1 .hot-main1-bottom ul li {
+            width: 306px;
+            height: 340px;
+            float: left;
+            margin-right: 13px;
+            background: #ffffff; }
+            .hot .hot-main .hot-main1 .hot-main1-bottom ul li .bottom-1 {
+              width: 306px; }
+              .hot .hot-main .hot-main1 .hot-main1-bottom ul li .bottom-1 img {
+                width: 306px; }
+            .hot .hot-main .hot-main1 .hot-main1-bottom ul li .bottom-2 {
+              margin-top: 15px;
+              text-indent: 1em; }
+              .hot .hot-main .hot-main1 .hot-main1-bottom ul li .bottom-2 a {
+                color: #333333; }
+            .hot .hot-main .hot-main1 .hot-main1-bottom ul li .bottom-3 {
+              margin-top: 10px;
+              margin-left: 1em;
+              font-size: 12px;
+              line-height: 20px; }
+              .hot .hot-main .hot-main1 .hot-main1-bottom ul li .bottom-3 a {
+                color: #8181bd; }
+            .hot .hot-main .hot-main1 .hot-main1-bottom ul li a:hover {
+              color: #C80000; }
+    .hot .hot-main .hot-main2 {
+      width: 243px;
+      height: 100%;
+      float: right;
+      overflow: hidden;
+      position: relative;
+      font-size: 14px; }
+      .hot .hot-main .hot-main2 .hot-main2-top {
+        height: 60px; }
+        .hot .hot-main .hot-main2 .hot-main2-top h3 {
+          line-height: 60px;
+          float: left; }
+        .hot .hot-main .hot-main2 .hot-main2-top p {
+          line-height: 60px;
+          float: right;
+          font-size: 12px; }
+      .hot .hot-main .hot-main2 .hot-main2-bottom {
+        height: 340px;
+        width: 243px;
+        background: #fff;
+        overflow: hidden; }
+        .hot .hot-main .hot-main2 .hot-main2-bottom ul {
+          width: 729px;
+          height: 284px;
+          margin: 15px 15px;
+          overflow: hidden; }
+          .hot .hot-main .hot-main2 .hot-main2-bottom ul li {
+            width: 100%;
+            height: 284px;
+            float: left; }
+            .hot .hot-main .hot-main2 .hot-main2-bottom ul li p {
+              margin-top: 10px;
+              width: 216px;
+              height: 22px;
+              overflow: hidden;
+              word-break: keep-all; }
+      .hot .hot-main .hot-main2 .hot-main2-span {
+        width: 100%;
+        height: 18px; }
+        .hot .hot-main .hot-main2 .hot-main2-span span {
+          display: inline-block;
+          width: 18px;
+          height: 8px;
+          margin-left: 45px;
+          background: green; }
+
+.floor {
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+  position: relative;
+  top: 10px; }
+  .floor .floor-main {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .floor .floor-main .floor-main-top {
+      width: 100%;
+      height: 60px;
+      line-height: 60px; }
+      .floor .floor-main .floor-main-top h3 {
+        float: left; }
+      .floor .floor-main .floor-main-top ul {
+        float: right; }
+        .floor .floor-main .floor-main-top ul li {
+          float: left;
+          padding: 0 15px; }
+    .floor .floor-main .floor-main-bottom {
+      width: 100%;
+      height: 470px; }
+      .floor .floor-main .floor-main-bottom .floor-left {
+        width: 210px;
+        height: 100%;
+        float: left; }
+        .floor .floor-main .floor-main-bottom .floor-left .floor-left-1 {
+          width: 100%;
+          height: 278px; }
+          .floor .floor-main .floor-main-bottom .floor-left .floor-left-1 img {
+            margin-left: -10px; }
+        .floor .floor-main .floor-main-bottom .floor-left .floor-left-2 {
+          width: 100%;
+          height: 32px;
+          background: #8a9be4;
+          line-height: 32px;
+          text-align: center;
+          color: #fff; }
+          .floor .floor-main .floor-main-bottom .floor-left .floor-left-2 a {
+            color: #fff; }
+          .floor .floor-main .floor-main-bottom .floor-left .floor-left-2 span {
+            padding: 0 3px; }
+        .floor .floor-main .floor-main-bottom .floor-left .floor-left-3 {
+          height: 160px;
+          background: #94a3e4; }
+          .floor .floor-main .floor-main-bottom .floor-left .floor-left-3 ul {
+            float: left;
+            margin: 5px 10px; }
+            .floor .floor-main .floor-main-bottom .floor-left .floor-left-3 ul li {
+              margin: 8px auto; }
+            .floor .floor-main .floor-main-bottom .floor-left .floor-left-3 ul a {
+              font-size: 12px;
+              color: #f0e3eb; }
+            .floor .floor-main .floor-main-bottom .floor-left .floor-left-3 ul a:hover {
+              text-decoration: underline; }
+      .floor .floor-main .floor-main-bottom .floor-right {
+        float: right;
+        width: 990px;
+        height: 100%;
+        border-top: 1px solid; }
+        .floor .floor-main .floor-main-bottom .floor-right .floor-ul {
+          width: 990px; }
+          .floor .floor-main .floor-main-bottom .floor-right .floor-ul li {
+            width: 197px;
+            height: 234px;
+            float: left;
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+            text-align: center; }
+            .floor .floor-main .floor-main-bottom .floor-right .floor-ul li img {
+              margin-top: 20px; }
+        .floor .floor-main .floor-main-bottom .floor-right .floor-right-1 {
+          width: 389px;
+          height: 100%;
+          float: left;
+          overflow: hidden; }
+          .floor .floor-main .floor-main-bottom .floor-right .floor-right-1 ul {
+            width: 1170px; }
+            .floor .floor-main .floor-main-bottom .floor-right .floor-right-1 ul li {
+              float: left; }
+        .floor .floor-main .floor-main-bottom .floor-right .floor-right-2 {
+          width: 600px;
+          height: 100%;
+          float: left; }
+          .floor .floor-main .floor-main-bottom .floor-right .floor-right-2 ul li {
+            width: 199px;
+            height: 234px;
+            float: left;
+            border-right: 1px solid;
+            border-bottom: 1px solid; }

@@ -1,831 +1,1175 @@
-                                    @charset "utf-8";
-                                    * {
-                                        padding: 0;
-                                        margin: 0
-                                    }
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0
+}
 
-                                    a,
-                                    li {
-                                        text-decoration: none;
-                                        list-style: none
-                                    }
-
-
-                                    $width1:100%;
-                                    $width2: 1200px;
-
-                                    $width3:30px;
-                                    .main {
-                                        margin: 0 auto;
-                                        overflow: hidden;
-                                        position: relative;
-                                    }
+a,
+li {
+    text-decoration: none;
+    list-style: none
+}
 
 
-                                    i {
-                                        display: inline-block;
-                                        margin-top: 0;
-                                        vertical-align: middle;
-                                    }
+$width1:100%;
+$width2: 1200px;
 
-                                    em {
-                                        display: inline-block;
-                                        width: 18px;
-                                        height: 18px;
-                                        vertical-align: middle;
-                                        margin-right: 7px;
-                                    }
-
-                                    a:hover {
-                                        color: #d7000f
-                                    }
-
-                                    header {
-                                        width: $width1;
-                                        background: #f8f8f8;
-                                        font-size: 14px;
-                                    }
-
-                                    .top_nav {
-                                        width: $width2;
-                                        height: $width3;
-                                        line-height: $width3;
-                                        margin: 0 auto;
-                                        .top-left {
-                                            float: left;
-                                            li {
-
-                                                &:nth-child(2) {
-                                                    width: 80px;
-                                                    height: 30px;
-                                                    border-left: 1px solid #f8f8f8;
-                                                    border-right: 1px solid #f8f8f8;
-
-                                                    &:hover {
-                                                        background: white;
-                                                        border-left: 1px solid #e6e6e6;
-                                                        border-right: 1px solid #e6e6e6;
-                                                        i.i2 {
-                                                            background: url('../images/ui.png ') 249px 178px;
-                                                        }
-                                                        .li-child1,
-                                                        .li-child2 {
-                                                            display: block;
-                                                        }
-                                                    }
-                                                    .li-child1 {
-                                                        position: absolute;
-                                                        top: 29px;
-                                                        width: 80px;
-
-                                                        border-bottom: 1px solid #ffffff;
-                                                        z-index: 10;
-                                                        display: none;
-                                                    }
-
-                                                    .li-child2 {
-                                                        position: absolute;
-                                                        top: 29px;
-                                                        left: -1px;
-                                                        width: 320px;
-                                                        height: 216px;
-                                                        border: 1px solid #e6e6e6;
-                                                        z-index: 8;
-                                                        display: none;
-                                                        background-color: #ffffff;
-                                                        .h-submenu {
-
-                                                            width: 290px;
-                                                            margin: 0 auto;
+$width3:30px;
+.main {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
 
 
-                                                            .h-submenu-1 {
-                                                                overflow: hidden;
-                                                                margin-top: 20px;
-                                                                line-height: 55px;
-                                                                border-bottom: 1px solid #f3f3f3;
+i {
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: middle;
+}
 
-                                                                .h-submenu-1-1 {
-                                                                    float: left;
-                                                                    width: 55px;
-                                                                    height: 55px;
+em {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
 
-                                                                    margin-bottom: 20px;
-                                                                    background: url('../images/ui.png') 270px 1188px
-                                                                }
-                                                                .p1 {
-                                                                    margin-left: 20px;
-                                                                    float: left;
-                                                                    a {
-                                                                        color: #006699
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
+a:hover {
+    color: #d7000f
+}
 
+header {
+    width: $width1;
+    background: #f8f8f8;
+    font-size: 14px;
+}
 
+.top_nav {
+    width: $width2;
+    height: $width3;
+    line-height: $width3;
+    margin: 0 auto;
+    .top-left {
+        float: left;
+        li {
 
+            &:nth-child(2) {
+                width: 80px;
+                height: 30px;
+                border-left: 1px solid #f8f8f8;
+                border-right: 1px solid #f8f8f8;
 
+                &:hover {
+                    background: white;
+                    border-left: 1px solid #e6e6e6;
+                    border-right: 1px solid #e6e6e6;
+                    i.i2 {
+                        background: url('../images/ui.png ') 249px 178px;
+                    }
+                    .li-child1,
+                    .li-child2 {
+                        display: block;
+                    }
+                }
+                .li-child1 {
+                    position: absolute;
+                    top: 29px;
+                    width: 80px;
 
-                                                float: left;
-                                                margin: 0 10px;
-                                                text-align: center;
-                                                position:relative;
-                                                i.i1 {
+                    border-bottom: 1px solid #ffffff;
+                    z-index: 10;
+                    display: none;
+                }
 
-                                                    @extend i;
-                                                    width: 16px;
-                                                    height: 16px;
-                                                    margin-right: 5px;
-                                                    background: url('../images/ui.png ') 254px 166px;
-                                                }
-                                                i.i2 {
-                                                    @extend i;
-                                                    width: 7px;
-                                                    height: 7px;
-                                                    margin-top: -7px;
-                                                    margin-left: 6px;
-                                                    background: url('../images/ui.png ') 249px 173px;
-                                                }
-                                            }
-                                        }
-                                        .top-right {
-                                            float: right;
-                                            li {
-                                                float: left;
-                                                margin: 0 15px;
-                                                .em1 {
-                                                    @extend em;
-                                                    background: url("../images/ui.png") 249px 1012px;
-                                                }
-                                                ;
-                                                .em2 {
-                                                    @extend em;
-                                                    background: url('../images/ui.png') 249px 400px;
-                                                }
-                                            }
-                                        }
-                                        a {
-                                            color: #888888;
-                                        }
-                                        a:hover {
-                                            color: #d7000f;
-                                        }
-                                    } // 头部样式结束，下边是活动banner部的样式
-                                    // ********************
-                                    // ********************
-                                    .hai {
-                                        width: $width1;
-                                        height: 80px;
-                                        position: relative;
-                                        overflow: hidden;
+                .li-child2 {
+                    position: absolute;
+                    top: 29px;
+                    left: -1px;
+                    width: 320px;
+                    height: 216px;
+                    border: 1px solid #e6e6e6;
+                    z-index: 8;
+                    display: none;
+                    background-color: #ffffff;
+                    .h-submenu {
 
-                                        .hd {
-                                            width: $width2;
-                                            height: $width1;
-                                            margin: 0 auto;
-                                        }
-                                    } // 活动banner部的样式结束，下边是搜索部分的样式
-                                    // ********************
-                                    // ********************
-                                    .serach {
-                                        width: $width1;
-                                        height: 100px;
+                        width: 290px;
+                        margin: 0 auto;
 
 
-                                        .search-m {
-                                            position: relative;
-                                            width: 1200px;
-                                            height: 100%;
-                                            margin: 0 auto;
-                                            .s-left {
+                        .h-submenu-1 {
+                            overflow: hidden;
+                            margin-top: 20px;
+                            line-height: 55px;
+                            border-bottom: 1px solid #f3f3f3;
 
-                                                width: 266px;
-                                                height: 50px;
-                                                float: left;
-                                                position: relative;
-                                                top: 25px;
-                                                .s-left-1 {
-                                                    width: 145px;
-                                                    height: $width1;
-                                                    float: left;
-                                                    background: url('../images/ui.png') 269px 556px;
-                                                }
-                                                .s-left-2 {
-                                                    float: right;
-                                                }
-                                            }
-                                        }
-                                        .s-middle {
-                                            position: absolute;
-                                            left: 385px;
-                                            top: 27px;
-                                            width: 500px;
-                                            height: 60px;
-                                            .s-middle-1 {
-                                                width: 500px;
-                                                height: 34px;
+                            .h-submenu-1-1 {
+                                float: left;
+                                width: 55px;
+                                height: 55px;
 
-                                                .s-middle-1-1 {
-                                                    float: left;
-                                                    width: 65px;
-                                                    height: 30px;
-                                                    position: relative;
-                                                    line-height: 30px;
-                                                    text-indent: 0.5em;
-                                                    border: 2px solid #e3101e;
-                                                    i {
-                                                        display: inline-block;
-                                                        margin-top: -4px;
-                                                        width: 12px;
-                                                        height: 8px;
-                                                        background: url('../images/ui.png ') 125px 56px;
-                                                    }
-
-                                                    ul {
-                                                        position: absolute;
-                                                        left: -2px;
-                                                        width: 100%;
-                                                        height: 100px;
-                                                        border: 2px solid #e3101e;
-                                                        border-top: 0;
-                                                        display: none;
-                                                        li {
-                                                            height: 25px;
-                                                            line-height: 25px;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            .s-middle-1-2 {
-                                                margin-left: 67px;
-                                                width: 430px;
-                                                height: 30px;
-                                                border: 2px solid #e3101e;
-                                                input {
-                                                    width: 340px;
-                                                    height: 30px;
-                                                    border: 0;
-                                                    text-indent: 0.5em;
-
-                                                    font-size: 14px;
-                                                    vertical-align: middle;
-                                                }
-                                                button {
-                                                    width: 85px;
-                                                    height: 30px;
-
-                                                    vertical-align: middle;
-                                                    background: #e3101e;
-                                                    outline: none;
-                                                    border: 0;
-                                                    color: #ffffff;
-                                                    font-size: 16px;
-                                                }
-                                            }
-                                            .s-middle-2 {
-                                                width: 500px;
-                                                a {
-                                                    font-size: 12px;
-                                                    margin-right: 2px;
-                                                    color: #a5a5a5;
-                                                }
-                                                a:nth-child(1) {
-                                                    color: #e3101e;
-                                                }
-                                                a:hover {
-                                                    color: #e3101e;
-                                                }
-                                            }
-                                        }
-                                        .s-right {
-                                            float: right;
-                                            margin-top: 27px;
-                                            position: relative;
-
-                                            a {
-                                                display: block;
-                                                width: 144px;
-                                                height: 34px;
-                                                line-height: 34px;
-                                                font-size: 14px;
-                                                z-index: -1;
-                                                em {
-                                                    display: inline-block;
-                                                    width: 28px;
-                                                    height: 20px;
-                                                    margin-left: 10px;
-                                                    vertical-align: middle;
-                                                    background: url("../images/ui.png") 170px 824px;
-                                                    sup {}
-                                                }
-                                                b {
-                                                    width: 0;
-                                                    height: 0;
-                                                    border: 4px dashed transparent;
-                                                    border-color: #5E5E5E transparent transparent;
-                                                    border-bottom: 0;
-                                                    border-top-style: solid;
-                                                    position: relative;
-                                                    top: 10px;
-                                                    left: 10px;
-                                                }
-
-
-                                                &:hover b {
-                                                    width: 0;
-                                                    height: 0;
-                                                    border: 4px solid;
-                                                    border-color: transparent transparent #5E5E5E;
-
-                                                    border-top-style: solid;
-                                                    position: relative;
-                                                    top: -12px;
-                                                    left: 10px;
-                                                }
-
-
-                                                &:hover {
-                                                    box-shadow: 0 0 5px 3px #f5f5f5;
-                                                }
-                                            }
-                                            .s-right1 {
-                                                width: 143px;
-                                                height: 0;
-                                                position: absolute;
-                                                top: 32px;
-                                                border-bottom: 2px solid #ffffff;
-                                                box-shadow: 0 5px 5px #ffffff;
-
-                                                z-index: 20;
-                                            }
-                                            .s-right2 {
-                                                width: 280px;
-                                                height: 100px;
-                                                line-height: 100px;
-                                                position: absolute;
-                                                left: -135px;
-
-                                                background: #ffffff;
-                                                z-index: 12;
-                                                display: none;
-                                                p {
-                                                    text-indent: 1em;
-                                                    a {
-                                                        display: inline;
-                                                    }
-                                                }
-                                            }
-                                            &:hover .s-right2 {
-                                                display: block;
-                                                box-shadow: 0 0 5px 3px #f5f5f5;
-                                            }
-                                        }
-                                    }
+                                margin-bottom: 20px;
+                                background: url('../images/ui.png') 270px 1188px
+                            }
+                            .p1 {
+                                margin-left: 20px;
+                                float: left;
+                                a {
+                                    color: #006699
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
 
 
 
 
+            float: left;
+            margin: 0 10px;
+            text-align: center;
+            position:relative;
+            i.i1 {
 
-                                    .main-nav {
-                                        width: 100%;
-                                        height: 40px;
-                                        overflow: hidden;
-                                        position: relative;
-                                        .main-nav1 {
-                                            width: 1200px;
-                                            height: 100%;
-                                            margin: 0 auto;
-                                            .h4-1 {
-                                                display: inline-block;
-                                                width: 200px;
-                                                height: 40px;
-                                                background-color: #db1927;
-                                                font-weight: 200;
-                                                color: #ffffff;
-                                                line-height: 40px;
-                                                text-indent: 1em;
-                                            }
-                                            ul {
-                                                position: relative;
-                                                top: -2px;
-                                                display: inline-block;
-                                                width: 800px;
-                                                height: 40px;
-                                                vertical-align: middle;
-                                                line-height: 40px;
-                                                li {
-                                                    display: inline-block;
-                                                    padding: 0 13px;
-                                                    a {
-                                                        color: #000000;
-                                                    }
-                                                }
-                                            }
-                                            .main-nav-right {
-                                                position: relative;
-                                                top: -2px;
-                                                width: 190px;
-                                                height: 40px;
-                                                background: red;
-                                                display: inline-block;
-                                                vertical-align: middle;
-                                            }
-                                        }
-                                    } // 主导航栏结束，下边是轮播图部分的代码
-                                    // ****************************************
-                                    // 
-                                    // 
-                                    // 
-                                    // 
-                                    // 
-                                    .carous {
-                                        width: 100%;
-                                        height: 450px;
-                                        background-color: red;
+                @extend i;
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+                background: url('../images/ui.png ') 254px 166px;
+            }
+            i.i2 {
+                @extend i;
+                width: 7px;
+                height: 7px;
+                margin-top: -7px;
+                margin-left: 6px;
+                background: url('../images/ui.png ') 249px 173px;
+            }
+        }
+    }
+    .top-right {
+        float: right;
+        li {
+            float: left;
+            margin: 0 15px;
+            .em1 {
+                @extend em;
+                background: url("../images/ui.png") 249px 1012px;
+            }
+            ;
+            .em2 {
+                @extend em;
+                background: url('../images/ui.png') 249px 400px;
+            }
+        }
+    }
+    a {
+        color: #888888;
+    }
+    a:hover {
+        color: #d7000f;
+    }
+} // 头部样式结束，下边是活动banner部的样式
+// ********************
+// ********************
+.hai {
+    width: $width1;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
 
-                                        position: relative;
-                                        .carous-main {
-                                            width: 1200px;
-                                            height: 450px;
-                                            margin: 0 auto;
-                                        }
-                                    } // ****************************************
-                                    // / ****************************************
-                                    // / ****************************************
-                                    // 
-                                    /// ****************************************
-                                    .avtive-main {
-                                        width: 100%;
-                                        height: 270px;
-                                        position: relative;
-                                        overflow: hidden;
-                                        top: 20px;
-                                        .active-main1 {
-                                            width: 1200px;
-                                            height: 100%;
-                                            margin: 0 auto;
-                                            .active-main1-left {
-                                                width: 950px;
-                                                height: 100%;
-                                                float: left;
-                                                .active-main1-left-top {
-                                                    width: 950px;
-                                                    height: 40px;
-                                                    background: #f64950;
-                                                    line-height: 40px;
-                                                    h3 {
-                                                        float: left;
-                                                        color: #ffffff;
-                                                        font-weight: 200;
-                                                        vertical-align: top;
-                                                        img {
-                                                            width: 40px;
-                                                            height: 40px;
-                                                        }
-                                                    }
-                                                }
-                                                .time-box {
-                                                    float: right;
-                                                    width: 238px;
-                                                    height: 40px;
-                                                }
-
-                                                .active-main1-ul {
-                                                    width: 948px;
-                                                    height: 210px;
-                                                    border: 1px solid #fbb6b9;
-                                                    border-top: 0;
-                                                    li {
-                                                        width: 236px;
-                                                        height: 100%;
-                                                        float: left;
-                                                        border-left: 1px dashed #eeeeee;
-                                                        a {
-                                                            display: inline-block;
-                                                            width: 238px;
-                                                            height: 180px;
-                                                            margin-top: 15px;
-                                                            img {
-                                                                margin: 0 59px;
-                                                            }
-                                                            .active-main1-li {
-                                                                height: 30px;
-                                                                margin: 6px 0 0 20px;
-                                                                i {
-                                                                    vertical-align: middle;
-                                                                    font-size: 20px;
-                                                                    color: #e3101e
-                                                                }
-                                                                span {
-                                                                    vertical-align: middle;
-                                                                    font-size: 20px;
-                                                                    color: #e3101e
-                                                                }
-                                                            }
-                                                            p {
-                                                                height: 18px;
-                                                                width: 196px;
-                                                                overflow: hidden;
-                                                                margin-left: 20px;
-                                                                color: #5e5e5e;
-                                                                font-size: 12px;
-                                                            }
-                                                            p:hover {
-                                                                color: #e3101e
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            .active-main1-right {
-                                                width: 240px;
-                                                height: 100%;
-                                                float: right;
-                                                a {
-                                                    display: inline-block;
-                                                    width: 240px;
-                                                    height: 250px;
-                                                }
-                                            }
-                                        }
-                                    } // 中部每日必抢部分结束，下边是品质嗨购节
-                                    // / ****************************************
-                                    // / ****************************************
-                                    // / ****************************************
-                                    //****************************************
-                                    .festival {
-                                        width: 100%;
-                                        height: 710px;
-                                        overflow: hidden;
-                                        position: relative;
-                                        top: 10px;
-                                        .festival-left {
-                                            height: 710px;
-                                            width: 300px;
-                                            float: left;
-                                            margin-left: -300px;
-                                        }
-                                        .festival-middle {
-                                            width: 1200px;
-                                            height: 710px;
-                                            margin: 0 auto;
-                                            img {
-                                                width: 1200px;
-                                                height: 80px;
-                                            }
-                                        }
-                                    } // / ****************************************
-                                    // / ****************************************
-                                    // / ****************************************
-                                    //****************************************
-                                    .contain {
-                                        width: 100%;
-                                        height: 482px;
-                                        position: relative;
-                                        overflow: hidden;
-                                        .contain-main {
-                                            width: 1200px;
-                                            height: 100%;
-                                            margin: 0 auto;
-                                            span {
-                                                margin-left: 12px;
-                                                color: #ccccd5;
-                                                font-weight: 200;
-                                            }
-                                            .contain-main-left {
-                                                width: 420px;
-                                                height: 100%;
-
-                                                float: left;
-                                                h3 {
-                                                    width: 100%;
-                                                    height: 60px;
-                                                    line-height: 60px;
-                                                }
-                                                .contain-main-left-img {
-                                                    border: 1px solid #e6e6e6;
-                                                    width: 418px;
-                                                    height: 419px;
-                                                    a {
-                                                        display: block;
-                                                        float: left;
-                                                        height: 209px;
-                                                    }
-                                                    a:nth-child(1) {
-                                                        width: 219px;
-                                                        height: 419px;
-                                                    }
-                                                    a:nth-child(2) {
-                                                        border-bottom: 1px dashed #e6e6e6;
-                                                    }
-                                                }
-                                            }
-                                            .contain-main-middle {
-                                                margin-left: 10px;
-                                                width: 420px;
-                                                height: 100%;
-
-                                                float: left;
-                                                h3 {
-                                                    width: 100%;
-                                                    height: 60px;
-                                                    line-height: 60px;
-                                                }
-                                                .contain-main-middle-img {
-                                                    border: 1px solid #e6e6e6;
-                                                    width: 418px;
-                                                    height: 420px;
-                                                    a {
-                                                        height: 209px;
-                                                        display: block;
-                                                        float: left;
-                                                    }
-                                                    a:nth-child(1) {
-                                                        width: 219px;
-                                                        height: 419px;
-                                                    }
-                                                    a:nth-child(2) {
-                                                        border-bottom: 1px dashed #e6e6e6;
-                                                    }
-                                                }
-                                            }
-                                            .contain-main-right {
-                                                width: 340px;
-                                                height: 100%;
-
-                                                float: right;
-
-                                                h3 {
-                                                    width: 340px;
-                                                    height: 60px;
-                                                    line-height: 60px;
-                                                }
-                                                .contain-main-right-img {
-                                                    width: 340px;
-                                                    height: 419px;
-                                                    .contain-main-right-img1 {
-                                                        float: left;
-                                                        width: 219px;
-                                                        height: 419px;
-                                                        border: 1px solid #e6e6e6;
-                                                        a {
-                                                            display: block;
-                                                            width: 220px;
-                                                            height: 209px;
-                                                        }
-                                                        a:nth-child(1) {
-                                                            border-bottom: 1px dashed #e6e6e6;
-                                                        }
-                                                    }
-                                                    .contain-main-right-img2 {
-                                                        width: 118px;
-                                                        height: 420px;
-                                                        float: right;
-                                                        border: 1px solid #e6e6e6;
-                                                        border-left: 0;
-                                                        a {
-                                                            display: block;
-                                                            width: 100%;
-                                                            height: 60px;
-
-                                                            border-top: 1px dashed #e6e6e6;
-                                                            img {
-                                                                margin: 15px 9px;
-                                                            }
-                                                        }
-                                                        a:first-child {
-                                                            border: 0;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    } // 陶实惠部分结束，下边是金融部分
-                                    // / ****************************************
-                                    // / ****************************************
-                                    // / ****************************************
-                                    //****************************************
-                                    .banking {
-                                        width: 100%;
-                                        height: 290px;
-                                        position: relative;
-                                        overflow: hidden;
-                                        .banking-main {
-                                            width: 1200px;
-                                            height: 100%;
-                                            margin: 0 auto;
-                                            h3 {
-                                                width: 100%;
-                                                height: 60px;
-                                                line-height: 60px;
-                                                span {
-                                                    margin-left: 12px;
-                                                    color: #ccccd5;
-                                                    font-weight: 200;
-                                                }
-                                            }
-                                            .banking-main1 {
-                                                float: left;
-                                                width: 420px;
-                                                height: 230px;
-                                            }
-                                            ul {
-                                                float: right;
-                                                width: 779px;
-                                                height: 228px;
-                                                border: 1px solid #e6e6e6;
-                                                border-left: 0;
-
-                                                li {
-                                                    float: left;
-                                                    width: 194px;
-                                                    height: 230px;
-                                                    border-left: 1px dashed #e6e6e6;
-                                                }
-                                                li:nth-child(1) {
-                                                    border: 0;
-                                                }
-                                            }
-                                        }
-                                    } // 金融部分结束，下边是猜你喜欢的部分
-                                    // / ****************************************
-                                    // / ****************************************
-                                    // / ****************************************
-                                    //****************************************
-                                    .like {
-                                        width: 100%;
-                                        height: 324px;
-                                        overflow: hidden;
-                                        position: relative;
-                                        top: 2px;
-                                        .like-main {
-                                            width: 1200px;
-                                            height: 60px;
-                                            margin: 0 auto;
-                                            .like-top {
-                                                width: 1200px;
-                                                height: 60px;
-
-                                                h3 {
-                                                    float: left;
-                                                    display: inline-block;
-                                                    line-height: 60px;
-
-                                                    span {
-                                                        color: #cccccc;
-                                                        margin-left: 12px;
-                                                        font-weight: 300;
-                                                    }
-                                                }
-                                                a {
-                                                    float: right;
-                                                    display: inline-block;
-                                                    width: 24px;
-                                                    height: 24px;
+    .hd {
+        width: $width2;
+        height: $width1;
+        margin: 0 auto;
+    }
+} // 活动banner部的样式结束，下边是搜索部分的样式
+// ********************
+// ********************
+.serach {
+    width: $width1;
+    height: 100px;
 
 
-                                                    margin-top: 18px;
-                                                    background: url("../images/ui (1).png") 115px 103px;
-                                                }
-                                                a:hover {
-                                                    background: url("../images/ui (1).png") 115px 129px;
-                                                }
-                                                a:nth-child(2) {
-                                                    background: url("../images/ui (1).png") 115px 25px;
-                                                }
-                                                a:nth-child(2):hover {
-                                                    background: url("../images/ui (1).png") 115px 51px;
-                                                }
-                                            }
-                                            ul {
-                                                width: 1200px;
-                                                height: 264px;
-                                                border: 1px solid #eeeeee;
-                                                li {
-                                                    width: 200px;
-                                                    height: 225px;
-                                                    margin-top: 20px;
-                                                    float: left;
-                                                    a {
-                                                        display: block;
-                                                        width: 199px;
-                                                        height: 225px;
-                                                        border-left: 1px dashed #eeeeee;
-                                                        img {
-                                                            display: block;
-                                                            margin-left: 40px;
-                                                            width: 120px;
-                                                            height: 120px
-                                                        }
-                                                    }
-                                                    .a {
-                                                        border: 0;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+    .search-m {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .s-left {
+
+            width: 266px;
+            height: 50px;
+            float: left;
+            position: relative;
+            top: 25px;
+            .s-left-1 {
+                width: 145px;
+                height: $width1;
+                float: left;
+                background: url('../images/ui.png') 269px 556px;
+            }
+            .s-left-2 {
+                float: right;
+            }
+        }
+    }
+    .s-middle {
+        position: absolute;
+        left: 385px;
+        top: 27px;
+        width: 500px;
+        height: 60px;
+        .s-middle-1 {
+            width: 500px;
+            height: 34px;
+
+            .s-middle-1-1 {
+                float: left;
+                width: 65px;
+                height: 30px;
+                position: relative;
+                line-height: 30px;
+                text-indent: 0.5em;
+                border: 2px solid #e3101e;
+                i {
+                    display: inline-block;
+                    margin-top: -4px;
+                    width: 12px;
+                    height: 8px;
+                    background: url('../images/ui.png ') 125px 56px;
+                }
+
+                ul {
+                    position: absolute;
+                    left: -2px;
+                    width: 100%;
+                    height: 100px;
+                    border: 2px solid #e3101e;
+                    border-top: 0;
+                    display: none;
+                    li {
+                        height: 25px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+        .s-middle-1-2 {
+            margin-left: 67px;
+            width: 430px;
+            height: 30px;
+            border: 2px solid #e3101e;
+            input {
+                width: 340px;
+                height: 30px;
+                border: 0;
+                text-indent: 0.5em;
+
+                font-size: 14px;
+                vertical-align: middle;
+            }
+            button {
+                width: 85px;
+                height: 30px;
+
+
+                vertical-align: middle;
+                background: #e3101e;
+                outline: none;
+                border-right: 1px solid;
+                color: #ffffff;
+                font-size: 16px;
+            }
+        }
+        .s-middle-2 {
+            width: 500px;
+            a {
+                font-size: 12px;
+                margin-right: 2px;
+                color: #a5a5a5;
+            }
+            a:nth-child(1) {
+                color: #e3101e;
+            }
+            a:hover {
+                color: #e3101e;
+            }
+        }
+    }
+    .s-right {
+        float: right;
+        margin-top: 27px;
+        position: relative;
+
+        a {
+            display: block;
+            width: 144px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 14px;
+            z-index: -1;
+            em {
+                display: inline-block;
+                width: 28px;
+                height: 20px;
+                margin-left: 10px;
+                vertical-align: middle;
+                background: url("../images/ui.png") 170px 824px;
+                sup {}
+            }
+            b {
+                width: 0;
+                height: 0;
+                border: 4px dashed transparent;
+                border-color: #5E5E5E transparent transparent;
+                border-bottom: 0;
+                border-top-style: solid;
+                position: relative;
+                top: 10px;
+                left: 10px;
+            }
+
+
+            &:hover b {
+                width: 0;
+                height: 0;
+                border: 4px solid;
+                border-color: transparent transparent #5E5E5E;
+
+                border-top-style: solid;
+                position: relative;
+                top: -12px;
+                left: 10px;
+            }
+
+
+            &:hover {
+                box-shadow: 0 0 5px 3px #f5f5f5;
+            }
+        }
+        .s-right1 {
+            width: 143px;
+            height: 0;
+            position: absolute;
+            top: 32px;
+            border-bottom: 2px solid #ffffff;
+            box-shadow: 0 5px 5px #ffffff;
+
+            z-index: 20;
+        }
+        .s-right2 {
+            width: 280px;
+            height: 100px;
+            line-height: 100px;
+            position: absolute;
+            left: -135px;
+
+            background: #ffffff;
+            z-index: 12;
+            display: none;
+            p {
+                text-indent: 1em;
+                a {
+                    display: inline;
+                }
+            }
+        }
+        &:hover .s-right2 {
+            display: block;
+            box-shadow: 0 0 5px 3px #f5f5f5;
+        }
+    }
+} // 搜索部分结束，下边是主导航部分样式
+// **********************8********************
+//  **********************8********************
+//   **********************8********************
+//    **********************8********************
+.main-nav {
+    width: 100%;
+    height: 40px;
+
+    position: relative;
+    .main-nav1 {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .main-nav2 {
+            width: 200px;
+            height: 490px;
+            float: left;
+
+            .h4-1 {
+
+                width: 200px;
+                height: 40px;
+                background-color: #db1927;
+                font-weight: 200;
+                color: #ffffff;
+                line-height: 40px;
+                text-indent: 1em;
+            }
+            .main-nav-over {
+                width: 200px;
+                height: 450px;
+                background: #464344;
+                position: relative;
+                z-index: 50;
+                ul.nav-ul1 {
+                    width: 200px;
+                    height: 450px;
+                    text-indent: 1em;
+
+                    overflow: hidden;
+
+                    border-bottom: 1px solid;
+                    li {
+                        width: 200px;
+                        height: 30px;
+                        line-height: 30px;
+                        overflow: hidden;
+                        a {
+                            font-size: 15px;
+                            color: #ffffff;
+                            margin-right: 5px;
+                        }
+                    }
+                    li:hover {
+                        background: #ffffff;
+                        border-left: 1px solid;
+                        a {
+                            color: #909090;
+                        }
+                        a:hover {
+                            color: #e34a55;
+                        }
+                    }
+                }
+            }
+        }
+        ul.nav-ul2 {
+
+
+            float: left;
+            width: 800px;
+            height: 40px;
+
+            line-height: 40px;
+            li {
+                display: inline-block;
+                padding: 0 13px;
+                a {
+                    color: #000000;
+                }
+            }
+        }
+        .main-nav-right {
+
+
+            width: 190px;
+            height: 40px;
+            background: red;
+
+            float: right;
+        }
+    }
+} // 主导航栏结束，下边是轮播图部分的代码
+// ****************************************
+// 
+// 
+// 
+// 
+// 
+.carous {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    ul {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+
+
+        li {
+            width: 100%;
+            height: 450px;
+            position: absolute;
+            z-index: 25;
+        }
+    }
+    ol {
+
+        width: 750px;
+        height: 15px;
+        li {
+            width: 30px;
+            height: 13px;
+        }
+    }
+} // ****************************************
+// / ****************************************
+// / ****************************************
+// 轮播图代码部分结束，下边是抢购活动部分
+/// ****************************************
+.avtive-main {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    top: 20px;
+    .active-main1 {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .active-main1-left {
+            width: 950px;
+            height: 100%;
+            float: left;
+            .active-main1-left-top {
+                width: 950px;
+                height: 40px;
+                background: #f64950;
+                line-height: 40px;
+                h3 {
+                    width: 200px;
+                    height: 40px;
+                    float: left;
+                    color: #ffffff;
+                    font-weight: 200;
+                    span {
+                        float: left;
+                    }
+
+
+                    img {
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            .time-box {
+                float: right;
+                width: 238px;
+                height: 40px;
+            }
+
+            .active-main1-ul {
+                width: 948px;
+                height: 210px;
+                border: 1px solid #fbb6b9;
+                border-top: 0;
+                li {
+                    width: 236px;
+                    height: 100%;
+                    float: left;
+                    border-left: 1px dashed #eeeeee;
+                    a {
+                        display: inline-block;
+                        width: 238px;
+                        height: 180px;
+                        margin-top: 15px;
+                        img {
+                            margin: 0 59px;
+                        }
+                        .active-main1-li {
+                            height: 30px;
+                            margin: 6px 0 0 20px;
+                            i {
+                                vertical-align: middle;
+                                font-size: 20px;
+                                color: #e3101e
+                            }
+                            span {
+                                vertical-align: middle;
+                                font-size: 20px;
+                                color: #e3101e
+                            }
+                        }
+                        p {
+                            height: 18px;
+                            width: 196px;
+                            overflow: hidden;
+                            margin-left: 20px;
+                            color: #5e5e5e;
+                            font-size: 12px;
+                        }
+                        p:hover {
+                            color: #e3101e
+                        }
+                    }
+                }
+            }
+        }
+        .active-main1-right {
+            width: 240px;
+            height: 100%;
+            float: right;
+            a {
+                display: inline-block;
+                width: 240px;
+                height: 250px;
+            }
+        }
+    }
+} // 中部每日必抢部分结束，下边是品质嗨购节
+// / ****************************************
+// / ****************************************
+// / ****************************************
+//****************************************
+.festival {
+    width: 100%;
+    height: 710px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    .festival-left {
+        height: 710px;
+        width: 300px;
+        float: left;
+        margin-left: -300px;
+    }
+    .festival-middle {
+        width: 1200px;
+        height: 710px;
+        margin: 0 auto;
+        img {
+            width: 1200px;
+            height: 80px;
+        }
+    }
+} // / ****************************************
+// / ****************************************
+// / ****************************************
+//****************************************
+.contain {
+    width: 100%;
+    height: 482px;
+    position: relative;
+    overflow: hidden;
+    .contain-main {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        span {
+            margin-left: 12px;
+            color: #ccccd5;
+            font-weight: 200;
+        }
+        .contain-main-left {
+            width: 420px;
+            height: 100%;
+
+            float: left;
+            h3 {
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+            }
+            .contain-main-left-img {
+                border: 1px solid #e6e6e6;
+                width: 418px;
+                height: 419px;
+                a {
+                    display: block;
+                    float: left;
+                    height: 209px;
+                }
+                a:nth-child(1) {
+                    width: 219px;
+                    height: 419px;
+                }
+                a:nth-child(2) {
+                    border-bottom: 1px dashed #e6e6e6;
+                }
+            }
+        }
+        .contain-main-middle {
+            margin-left: 10px;
+            width: 420px;
+            height: 100%;
+
+            float: left;
+            h3 {
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+            }
+            .contain-main-middle-img {
+                border: 1px solid #e6e6e6;
+                width: 418px;
+                height: 420px;
+                a {
+                    height: 209px;
+                    display: block;
+                    float: left;
+                }
+                a:nth-child(1) {
+                    width: 219px;
+                    height: 419px;
+                }
+                a:nth-child(2) {
+                    border-bottom: 1px dashed #e6e6e6;
+                }
+            }
+        }
+        .contain-main-right {
+            width: 340px;
+            height: 100%;
+
+            float: right;
+
+            h3 {
+                width: 340px;
+                height: 60px;
+                line-height: 60px;
+            }
+            .contain-main-right-img {
+                width: 340px;
+                height: 419px;
+                .contain-main-right-img1 {
+                    float: left;
+                    width: 219px;
+                    height: 419px;
+                    border: 1px solid #e6e6e6;
+                    a {
+                        display: block;
+                        width: 220px;
+                        height: 209px;
+                    }
+                    a:nth-child(1) {
+                        border-bottom: 1px dashed #e6e6e6;
+                    }
+                }
+                .contain-main-right-img2 {
+                    width: 118px;
+                    height: 420px;
+                    float: right;
+                    border: 1px solid #e6e6e6;
+                    border-left: 0;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 60px;
+
+                        border-top: 1px dashed #e6e6e6;
+                        img {
+                            margin: 15px 9px;
+                        }
+                    }
+                    a:first-child {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+} // 陶实惠部分结束，下边是金融部分
+// / ****************************************
+// / ****************************************
+// / ****************************************
+//****************************************
+.banking {
+    width: 100%;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    .banking-main {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        h3 {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            span {
+                margin-left: 12px;
+                color: #ccccd5;
+                font-weight: 200;
+            }
+        }
+        .banking-main1 {
+            float: left;
+            width: 420px;
+            height: 230px;
+        }
+        ul {
+            float: right;
+            width: 779px;
+            height: 228px;
+            border: 1px solid #e6e6e6;
+            border-left: 0;
+
+            li {
+                float: left;
+                width: 194px;
+                height: 230px;
+                border-left: 1px dashed #e6e6e6;
+            }
+            li:nth-child(1) {
+                border: 0;
+            }
+        }
+    }
+} // 金融部分结束，下边是猜你喜欢的部分
+// / ****************************************
+// / ****************************************
+// / ****************************************
+//****************************************
+.like {
+    width: 100%;
+    height: 325px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    .like-main {
+        width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        .like-top {
+            width: 1200px;
+            height: 60px;
+
+            h3 {
+                float: left;
+                display: inline-block;
+                line-height: 60px;
+
+                span {
+                    color: #cccccc;
+                    margin-left: 12px;
+                    font-weight: 300;
+                }
+            }
+            a {
+                float: right;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+
+
+                margin-top: 18px;
+                background: url("../images/ui (1).png") 115px 103px;
+            }
+            a:hover {
+                background: url("../images/ui (1).png") 115px 129px;
+            }
+            a:nth-child(2) {
+                background: url("../images/ui (1).png") 115px 25px;
+            }
+            a:nth-child(2):hover {
+                background: url("../images/ui (1).png") 115px 51px;
+            }
+        }
+        ul {
+            width: 1200px;
+            height: 263px;
+            border: 1px solid #eeeeee;
+            li {
+                width: 200px;
+                height: 223px;
+                margin-top: 20px;
+                float: left;
+                a {
+                    display: block;
+                    width: 199px;
+                    height: 224px;
+                    border-left: 1px dashed #eeeeee;
+                    img {
+                        display: block;
+                        margin-left: 40px;
+                        width: 120px;
+                        height: 119px
+                    }
+                    p:nth-child(2) {
+                        width: 167px;
+                        height: 36px;
+                        font-size: 12px;
+                        margin: 32px 0 0 20px;
+                        color: #5e5e5e;
+                    }
+                    p:nth-child(2):hover {
+                        color: #e3101e;
+                    }
+
+                    p:nth-child(3) {
+                        color: #e3101e;
+                        line-height: 16px;
+                        height: 16px;
+                        margin: 8px 0 0 20px;
+                        font-size: 16px;
+                    }
+                }
+                .a {
+                    border: 0;
+                }
+            }
+        }
+    }
+} // 猜你部分结束，下边是热门的部分
+// ******************************
+// ******************************
+// ******************************
+// ******************************
+// ******************************
+.hot {
+    width: 100%;
+    height: 428px;
+    top: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
+    .hot-main {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .hot-main1 {
+            width: 957px;
+            height: 100%;
+            float: left;
+            .hot-main1-top {
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                h3 {
+                    float: left;
+                }
+                p {
+
+                    float: right;
+                    margin-right: 13px;
+                }
+            }
+            .hot-main1-bottom {
+                width: 100%;
+                height: 370px;
+                ul {
+                    height: 340px;
+                    margin-bottom: 30px;
+                    li {
+                        width: 306px;
+                        height: 340px;
+                        float: left;
+                        margin-right: 13px;
+                        background: #ffffff;
+                        .bottom-1 {
+                            width: 306px;
+
+                            img {
+                                width: 306px;
+                            }
+                        }
+                        .bottom-2 {
+                            margin-top: 15px;
+                            text-indent: 1em;
+                            a {
+                                color: #333333;
+                            }
+                        }
+                        .bottom-3 {
+                            margin-top: 10px;
+                            margin-left: 1em;
+                            font-size: 12px;
+                            line-height: 20px;
+                            a {
+                                color: #8181bd;
+                            }
+                        }
+                        a:hover {
+                            color: #C80000;
+                        }
+                    }
+                }
+            }
+        }
+        .hot-main2 {
+            width: 243px;
+            height: 100%;
+            float: right;
+            overflow: hidden;
+            position: relative;
+            font-size: 14px;
+            .hot-main2-top {
+                height: 60px;
+
+                h3 {
+                    line-height: 60px;
+                    float: left;
+                }
+                p {
+                    line-height: 60px;
+                    float: right;
+                    font-size: 12px;
+                }
+            }
+            .hot-main2-bottom {
+                height: 340px;
+                width: 243px;
+                background: #fff;
+                overflow: hidden;
+                ul {
+                    width: 729px;
+                    height: 284px;
+                    margin: 15px 15px;
+                    overflow: hidden;
+                    li {
+                        width: 100%;
+                        height: 284px;
+                        float: left;
+                        p {
+                            margin-top: 10px;
+                            width: 216px;
+                            height: 22px;
+                            overflow: hidden;
+                            word-break: keep-all
+                        }
+                    }
+                }
+            }
+            .hot-main2-span {
+                width: 100%;
+                height: 18px;
+
+
+                span {
+                    display: inline-block;
+                    width: 18px;
+                    height: 8px;
+                    margin-left: 45px;
+                    background: green;
+                }
+            }
+        }
+    }
+} // 热门话题部分结束，下边开始楼层部分样式*
+// *************************************
+// *************************************
+// *************************************
+// *************************************
+.floor {
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    .floor-main {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .floor-main-top {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            h3 {
+                float: left;
+            }
+            ul {
+                float: right;
+                li {
+                    float: left;
+                    padding: 0 15px;
+                }
+            }
+        }
+        .floor-main-bottom {
+            width: 100%;
+            height: 470px;
+
+            .floor-left {
+                width: 210px;
+                height: 100%;
+                float: left;
+                .floor-left-1 {
+                    width: 100%;
+                    height: 278px;
+                    img {
+                        margin-left: -10px;
+                    }
+                }
+                .floor-left-2 {
+                    width: 100%;
+                    height: 32px;
+                    background: #8a9be4;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #fff;
+                    a {
+                        color: #fff;
+                    }
+                    span {
+                        padding: 0 3px;
+                    }
+                }
+                .floor-left-3 {
+                    height: 160px;
+                    background: #94a3e4;
+                    ul {
+                        float: left;
+                        margin: 5px 10px;
+                        li {
+                            margin: 8px auto;
+                        }
+                        a {
+                            font-size: 12px;
+                            color: #f0e3eb;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .floor-right {
+                float: right;
+                width: 990px;
+                height: 100%;
+                border-top: 1px solid;
+
+                .floor-ul {
+                    width: 990px;
+                    li {
+                        width: 197px;
+                        height: 234px;
+                        float: left;
+                        border-right: 1px solid;
+                        border-bottom: 1px solid;
+                        text-align: center;
+                        img {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .floor-right-1 {
+                    width: 389px;
+                    height: 100%;
+                    float: left;
+                    overflow: hidden;
+                    ul {
+                        width: 1170px;
+                        li {
+                            float: left;
+                        }
+                    }
+                }
+                .floor-right-2 {
+                    width: 600px;
+                    height: 100%;
+                    float: left;
+                    ul {
+                        li {
+                            width: 199px;
+                            height: 234px;
+                            float: left;
+                            border-right: 1px solid;
+                            border-bottom: 1px solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
