@@ -16,6 +16,8 @@ gulp.task('server', function() {
     gulp.watch("./*.html").on('change', reload);
     gulp.watch("./*.js").on('change', reload);
     gulp.watch("./*.images").on('change', reload);
+
+
 });
 
 // 任务：编译sass文件
