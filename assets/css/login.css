@@ -30,46 +30,93 @@ header {
 .banner {
   width: 100%;
   height: 480px;
-  background: #e5004b;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  background: #cb1222; }
   .banner .banner-main {
     width: 1200px;
     height: 100%;
     margin: 0 auto; }
-    .banner .banner-main .banner-main-1 {
+    .banner .banner-main .banner-1 {
       width: 990px;
       height: 100%;
-      position: relative;
-      margin: 0 auto; }
-      .banner .banner-main .banner-main-1 .chose {
+      margin: 0 auto;
+      position: relative; }
+      .banner .banner-main .banner-1 .xxk {
         position: absolute;
-        background: #fff;
-        width: 350px;
-        height: 370px;
         right: 0;
-        top: 25px; }
-        .banner .banner-main .banner-main-1 .chose .chose-top {
-          width: 350px;
-          height: 55px;
-          line-height: 55px;
+        top: 24px;
+        width: 351px;
+        height: 368px;
+        background: #fff; }
+        .banner .banner-main .banner-1 .xxk .xxk-top {
+          width: 100%;
+          height: 56px;
           border-bottom: 1px solid #f4f4f4; }
-          .banner .banner-main .banner-main-1 .chose .chose-top h3 {
-            width: 174px;
+          .banner .banner-main .banner-1 .xxk .xxk-top h3 {
+            width: 175px;
+            height: 56px;
+            text-align: center;
             float: left;
-            text-align: center; }
-        .banner .banner-main .banner-main-1 .chose .chose-bottom {
-          width: 350px;
-          height: 314px; }
-          .banner .banner-main .banner-main-1 .chose .chose-bottom .chose1 {
+            font-weight: 300;
+            line-height: 56px; }
+          .banner .banner-main .banner-1 .xxk .xxk-top .xian {
+            width: 1px;
+            height: 20px;
+            float: left;
+            background: #000000;
+            margin-top: 18px; }
+        .banner .banner-main .banner-1 .xxk .xxk-bottom {
+          width: 100%;
+          height: 268px;
+          position: relative;
+          border-bottom: 1px solid #f4f4f4; }
+          .banner .banner-main .banner-1 .xxk .xxk-bottom .xxk-bottom-0 {
             width: 320px;
-            height: 265px;
-            text-align: center; }
-            .banner .banner-main .banner-main-1 .chose .chose-bottom .chose1 .chose-s {
-              margin-top: 25px; }
-            .banner .banner-main .banner-main-1 .chose .chose-bottom .chose1 p {
-              color: #5e5e5e;
-              font-size: 12px; }
-            .banner .banner-main .banner-main-1 .chose .chose-bottom .chose1 .foo {
+            height: 180px;
+            border-bottom: #f4f4f4; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .xxk-bottom-0 .bottom-1 {
+              width: 167px;
+              height: 170px;
+              margin: 10px 76.5px; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .xxk-bottom-0 p {
+              font-size: 14px;
+              text-align: center; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .xxk-bottom-0 .bottom-2 a {
+              font-size: 14px;
+              float: right; }
+          .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z {
+            width: 290px;
+            height: 100%;
+            margin: 20px auto; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-1 {
               width: 100%;
-              height: 50px;
-              line-height: 50px; }
+              height: 42px;
+              position: relative; }
+              .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-1 input {
+                width: 288px;
+                height: 40px;
+                margin-top: 8px;
+                text-indent: 1em; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-2 {
+              width: 100%;
+              height: 42px;
+              position: relative; }
+              .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-2 input {
+                width: 288px;
+                height: 40px;
+                margin-top: 8px;
+                text-indent: 1em; }
+          .banner .banner-main .banner-1 .xxk .xxk-bottom .floor {
+            width: 100%;
+            height: 54px;
+            position: relative; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .floor .content {
+              width: 311px;
+              height: 100%;
+              margin: 0 auto; }
+              .banner .banner-main .banner-1 .xxk .xxk-bottom .floor .content a {
+                font-size: 14px;
+                color: #5e5e5e;
+                line-height: 44px;
+                margin-left: 5px; }

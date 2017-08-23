@@ -1,0 +1,50 @@
+var data1 = [
+        [
+            {
+                "id": "1",
+                "img": "assets/images/xx6.jpg",
+                "price": "799.00",
+                "title": "荣耀畅玩6A 标配版 2G 16G"
+            },
+            {
+                "id": "2",
+                "img": "assets/images/xx7.jpg",
+                "price": "2698.00",
+                "title": "vivo X9s 64G 全网通 活力蓝"
+            },
+            {
+                "id": "3",
+                "img": "assets/images/xx8.jpg",
+                "price": "2699.00",
+                "title": "荣耀9 64G 全网通 海鸥灰"
+            },
+            {
+                "id": "4",
+                "img": "assets/images/xx9.jpg",
+                "price": "2880.00",
+                "title": "魅族 PRO 7 64G 全网通 香槟金"
+            },
+            {
+                "id": "5",
+                "img": "assets/images/xx10.jpg",
+                "price": "5688.00",
+                "title": "
+                三星 S8 全网通 谜夜黑 "}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ]
