@@ -48,7 +48,8 @@ header {
         top: 24px;
         width: 351px;
         height: 368px;
-        background: #fff; }
+        background: #fff;
+        overflow: hidden; }
         .banner .banner-main .banner-1 .xxk .xxk-top {
           width: 100%;
           height: 56px;
@@ -78,7 +79,7 @@ header {
             .banner .banner-main .banner-1 .xxk .xxk-bottom .xxk-bottom-0 .bottom-1 {
               width: 167px;
               height: 170px;
-              margin: 10px 76.5px; }
+              margin: 0 auto; }
             .banner .banner-main .banner-1 .xxk .xxk-bottom .xxk-bottom-0 p {
               font-size: 14px;
               text-align: center; }
@@ -88,7 +89,7 @@ header {
           .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z {
             width: 290px;
             height: 100%;
-            margin: 20px auto; }
+            margin: 0 auto; }
             .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-1 {
               width: 100%;
               height: 42px;
@@ -105,8 +106,25 @@ header {
               .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-2 input {
                 width: 288px;
                 height: 40px;
-                margin-top: 8px;
+                margin-top: 28px;
                 text-indent: 1em; }
+            .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-3 {
+              width: 288px;
+              height: 40px;
+              overflow: hidden;
+              margin-top: 40px; }
+              .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-3 .in-3-left {
+                width: 85px;
+                height: 18px;
+                float: left;
+                font-size: 14px; }
+              .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-3 .in-3-right {
+                width: 130px;
+                height: 18px;
+                float: right;
+                font-size: 14px; }
+                .banner .banner-main .banner-1 .xxk .xxk-bottom .in-z .in-3 .in-3-right span {
+                  padding: 0 5px; }
           .banner .banner-main .banner-1 .xxk .xxk-bottom .floor {
             width: 100%;
             height: 54px;
